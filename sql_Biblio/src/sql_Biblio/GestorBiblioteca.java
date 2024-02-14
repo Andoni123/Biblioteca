@@ -11,22 +11,24 @@ public class GestorBiblioteca {
 		
 	}
 	private static void run(){
-		
-	
-		Menu.mostrarMenuBiblioteca();
-		int opcion= Integer.parseInt(scan.nextLine());
-		//do while
+		int opcion;
 		do {
+			Menu.mostrarMenuBiblioteca();
+			opcion= Integer.parseInt(scan.nextLine());
+			
 			switch(opcion) {
 			case Menu.LIBROS:
-				Menu.mostrarMenuLibros();
+				GestorLibro.run(scan);
+				break;
 			case Menu.PRESTAMOS:
-				Menu.mostrarMenuPrestamos();
+				GestorPrestamo.run(scan);
+				break;
 			case Menu.SOCIOS:
-				Menu.mostrarMenuSocios();
+				GestorSocio.run(scan);
+				break;
 			case Menu.SALIR:
 				System.out.println("SALIR...");
-			
+			break;
 			}
 		}while(opcion != Menu.SALIR);
 	}

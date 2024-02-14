@@ -6,12 +6,12 @@ public class Menu {
 	public static final int SOCIOS=3;
 	public static final int SALIR=0;
 	
-	public static final int INSERTARL=1;
-	public static final int ELIMINARL=2;
-	public static final int VERL=3;
+	public static final int INSERTARLIBRO=1;
+	public static final int ELIMINARLIBRO=2;
+	public static final int VERLIBRO=3;
 	
-	public static final int VERS=1;
-	public static final int INSERTARS=2;
+	public static final int VERSOCIO=1;
+	public static final int INSERTARSOCIO=2;
 	
 	public static final int PRESTAR=1;
 	
@@ -20,27 +20,27 @@ public class Menu {
 		//menu
 		System.out.println("---Menu---");
 		System.out.println(SALIR +"-Salir");
-		System.out.println(LIBROS + "-Gestionar Libros");
-		System.out.println(PRESTAMOS +"-Gestionar Prestamos");
-		System.out.println(SOCIOS +"-Gestionar Socios");
+		System.out.println(LIBROS + " Gestionar Libros");
+		System.out.println(PRESTAMOS +" Gestionar Prestamos");
+		System.out.println(SOCIOS +" Gestionar Socios");
 	}
 	public static void mostrarMenuLibros(){
 		System.out.println("---Menu De Libros---");
 		System.out.println(SALIR +"-Salir");
-		System.out.println(INSERTARL + "Insertar libro");
-		System.out.println(PRESTAMOS +"Eliminar libro");
-		System.out.println(SOCIOS +"Ver libros");
+		System.out.println(INSERTARLIBRO + " Insertar libro");
+		System.out.println(ELIMINARLIBRO +" Eliminar libro");
+		System.out.println(VERLIBRO +" Ver libros");
 	}
 	public static void mostrarMenuSocios(){
 		System.out.println("---Menu De Socios---");
 		System.out.println(SALIR +"-Salir");
-		System.out.println(VERS + "Ver socios");
-		System.out.println(INSERTARS +"Insertar nuevo socio");
+		System.out.println(VERSOCIO + " Ver socios");
+		System.out.println(INSERTARSOCIO +" Insertar nuevo socio");
 		}
 	public static void mostrarMenuPrestamos(){
 		System.out.println("---Menu De Prestamos---");
-		System.out.println(SALIR +"-Salir");
-		System.out.println(PRESTAR + "Realizar Un Prestamo");
+		System.out.println(SALIR +" Salir");
+		System.out.println(PRESTAR + " Realizar Un Prestamo");
 		}
 	
 
