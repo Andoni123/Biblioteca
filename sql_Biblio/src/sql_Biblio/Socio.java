@@ -56,5 +56,7 @@ public class Socio {
 		return "Socio [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", direccion=" + direccion
 				+ ", poblacion=" + poblacion + ", provincia=" + provincia + ", dni=" + dni + "]";
 	}
+	
+
 
 }
