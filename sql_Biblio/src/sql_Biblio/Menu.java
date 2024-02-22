@@ -14,7 +14,8 @@ public class Menu {
 	public static final int VERSOCIO=1;
 	public static final int INSERTARSOCIO=2;
 	
-	public static final int PRESTAR=1;
+	public static final int INSERTARPRESTAMO=2;
+	public static final int VERPRESTAMOS=1;
 	
 	public static void mostrarMenuBiblioteca() {
 		
@@ -42,7 +43,8 @@ public class Menu {
 	public static void mostrarMenuPrestamos(){
 		System.out.println("---Menu De Prestamos---");
 		System.out.println(SALIR +" Salir");
-		System.out.println(PRESTAR + " Realizar Un Prestamo");
+		System.out.println(VERPRESTAMOS +" Ver prestamos");
+		System.out.println(INSERTARPRESTAMO + " Realizar Un Prestamo");
 		}
 	
 

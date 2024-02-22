@@ -33,4 +33,9 @@ public class Prestamo {
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
+	@Override
+	public String toString() {
+		return "Prestamo [id_socio=" + id_socio + ", devuelto=" + devuelto + ", id_libro=" + id_libro + ", fecha="
+				+ fecha + "]";
+	}
 }
