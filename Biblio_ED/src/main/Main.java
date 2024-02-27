@@ -6,23 +6,25 @@ import java.util.Scanner;
 
 public class Main {
 
-	static Scanner scan= new Scanner(System.in);
+	static Scanner scan = new Scanner(System.in);
+
 	public static void main(String[] args) {
+		ArrayList<Libro> libros = new ArrayList<>();
 
 		int option;
-		
-		final int AÑADIR_LIBRO=1;
-		final int ELIMINAR_LIBRO=2;
-		final int SALIR =0;
+
+		final int AÑADIR_LIBRO = 1;
+		final int ELIMINAR_LIBRO = 2;
+		final int SALIR = 0;
 		do {
-			 option= Integer.parseInt(scan.nextLine());
 			System.out.println(SALIR + "Salir");
 			System.out.println(AÑADIR_LIBRO + "Añadir libro");
 			System.out.println(ELIMINAR_LIBRO + "Eliminar libro");
+			option = Integer.parseInt(scan.nextLine());
 
 			switch (option) {
 			case AÑADIR_LIBRO:
-				añadirLibro();
+				añadirLibro(libros);
 				break;
 			case ELIMINAR_LIBRO:
 				break;
@@ -32,22 +34,23 @@ public class Main {
 			default:
 				break;
 			}
-		}while(option!=0);
+		} while (option != 0);
 	}
-	static ArrayList<Libro> libros= new ArrayList<>();
 
-	private static void añadirLibro() {
-		Libro libro=new Libro();
-		System.out.println("Introduce id ");
-		libro.getId(Integer.parseInt(scan.nextLine()));
+	public static void añadirLibro(ArrayList<Libro> libros) {
+
+		Libro libro = new Libro();
+		libro.setId(libros.size() + 1);
 		System.out.println("Introduce nombre del libro");
-		libro.getNombre(scan.nextLine());
+		libro.setNombre(scan.nextLine());
 		System.out.println("Introduce numero de paginas");
-		libro.getNum_pag(Integer.parseInt(scan.nextLine()));
-		System.out.println("Introduce fecha salida");
-		libro.getFecha_Publi(new Date());
-		
+		libro.setNum_pag(Integer.parseInt(scan.nextLine()));
+		libro.setFecha_Publi(new Date());
+
 		libros.add(libro);
+
+		
+
 	}
 
 }
