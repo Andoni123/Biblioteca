@@ -9,7 +9,7 @@ public class Libro {
 	private int num_pag;
 	private Date fecha_Publi;
 
-	public int getId() {
+	public int getId(int i) {
 		return id;
 	}
 
@@ -17,7 +17,7 @@ public class Libro {
 		this.id = id;
 	}
 
-	public String getNombre() {
+	public String getNombre(String string) {
 		return nombre;
 	}
 
@@ -25,7 +25,7 @@ public class Libro {
 		this.nombre = nombre;
 	}
 
-	public int getNum_pag() {
+	public int getNum_pag(int i) {
 		return num_pag;
 	}
 
@@ -33,7 +33,7 @@ public class Libro {
 		this.num_pag = num_pag;
 	}
 
-	public Date getFecha_Publi() {
+	public Date getFecha_Publi(Date date) {
 		return fecha_Publi;
 	}
 
