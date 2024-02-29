@@ -12,6 +12,7 @@ import sql_Biblio.Libro;
 
 public class GestorBBDD extends Conector {
 
+	
 	// lector
 	public static ArrayList<Libro> getLibros() {
 
