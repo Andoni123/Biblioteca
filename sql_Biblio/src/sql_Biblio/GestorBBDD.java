@@ -131,7 +131,6 @@ public class GestorBBDD extends Conector {
 		} catch (SQLException e) {
 			System.out.println("se tea jodido  insertarSocio");
 			e.printStackTrace();
-			pst.execute();
 		}
 	}
 
